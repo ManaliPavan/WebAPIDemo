@@ -41,6 +41,9 @@ namespace WebAPIDemo
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IEmployeeServices, EmployeeServices>();
 
+            services.AddScoped<ICourseRepository, CourseRepository>();
+            services.AddScoped<ICourseServices, CourseServices>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIDemo", Version = "v1" });

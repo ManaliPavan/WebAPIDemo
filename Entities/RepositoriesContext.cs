@@ -15,6 +15,8 @@ namespace WebAPIDemo.Entities
 
         public DbSet<Employee> Employee { get; set; }
 
+        public DbSet<Course> Course { get; set; }
+
     }
 
 }
